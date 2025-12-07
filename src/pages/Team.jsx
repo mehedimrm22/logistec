@@ -53,9 +53,6 @@ const PAGE_SIZE = 3; // members per page
 
   const totalPages = Math.ceil(teamMembers.length / PAGE_SIZE);
 
-  //const startIndex = (currentPage - 1) * PAGE_SIZE;
-  //const visibleMembers = teamMembers.slice(startIndex, startIndex + PAGE_SIZE);
-
   const goToPage = (page) => {
     if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
