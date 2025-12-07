@@ -48,7 +48,7 @@ export default function Team() {
       
 ];
 
-const PAGE_SIZE = 3; // members per page
+const PAGE_SIZE = 3;
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(teamMembers.length / PAGE_SIZE);
