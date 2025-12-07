@@ -1,0 +1,121 @@
+.featured-section {
+  padding: 70px 0;
+}
+
+.featured-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.featured-arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.featured-arrow-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.featured-arrow-next {
+  background: #fe5624;
+  color: #ffffff;
+  border-color: #fe5624;
+}
+
+.featured-arrow-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* cards */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.featured-card {
+  position: relative;
+  overflow: hidden;
+  background: #111827;
+}
+
+.featured-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay with text – visible only on hover */
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.featured-card:hover .featured-overlay {
+  opacity: 1;
+}
+
+/* top small arrow square */
+.featured-arrow-square {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* bottom text */
+.featured-text {
+  color: #ffffff;
+}
+
+.featured-category {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.featured-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}

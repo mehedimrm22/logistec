@@ -1,0 +1,114 @@
+/* PROCESS SECTION */
+
+.process-section {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.process-title {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+/* container for line + items */
+.process-steps {
+  position: relative;
+  margin-top: 10px;
+}
+
+/* faint connecting line behind circles */
+.process-line {
+  position: absolute;
+  top: 82px;                
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: #ffe6d9;        
+  z-index: 0;
+}
+
+/* 4 steps side by side */
+.process-grid {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* outer circle */
+.process-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* small orange badge – sits HALF OUTSIDE the circle */
+.process-number {
+  position: absolute;
+  top: -14px;         
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fe5624;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* big icon inside circle */
+.process-icon {
+  font-size: 44px;
+  color: #111827;
+}
+
+/* text under each circle */
+.process-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111827;
+  max-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .process-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  .process-line {
+    left: 12%;
+    right: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-line {
+    display: none;       
+  }
+
+  .process-circle {
+    width: 130px;
+    height: 130px;
+  }
+}

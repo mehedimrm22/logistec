@@ -1,0 +1,59 @@
+.error-body {
+  padding: 90px 0 110px;
+  text-align: center;
+}
+
+.error-body-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-code {
+  font-size: 140px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.error-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.error-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* BUTTON – no radius per project rule */
+.error-btn {
+  display: inline-block;
+  padding: 10px 28px;
+  background: var(--primary);
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid var(--primary);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.error-btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .error-code {
+    font-size: 100px;
+  }
+
+  .error-heading {
+    font-size: 22px;
+  }
+}

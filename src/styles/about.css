@@ -1,0 +1,146 @@
+.navbar-top {
+  background-color: var(--primary) !important;
+}
+.navbar-main {
+  background-color: var(--text-light) !important;
+}
+
+.about-hero {
+  background: linear-gradient(180deg, #0f1b24 0%, #141f26 60%, #1f2933 100%);
+  padding: 80px 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  text-align: center;
+  color: var(--text-light);
+}
+
+.about-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.about-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* Breadcrumb */
+.about-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.about-breadcrumb a {
+  color: #fe5624;          /* primary orange for "Home" */
+  text-decoration: none;
+}
+
+.about-breadcrumb span {
+  color: #ffffff;
+}
+
+.about-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+
+.about-logistics {
+  padding: 80px 0;
+}
+
+.about-logistics-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+
+/* Left image */
+.about-logistics-image img {
+  width: 85%;
+  height: auto;
+  display: block;
+  background: #d4d4d4;
+}
+
+/* Right content */
+.about-logistics-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about-logistics-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+  max-width: 420px;
+  margin-bottom: 24px;
+}
+
+/* Feature rows */
+.about-logistics-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.about-feature-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: rgba(254, 86, 36, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.about-feature h3 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.about-feature p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Read more button */
+.about-read-btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.about-read-btn:hover {
+  background: #e24f21; 
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-logistics-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-logistics-image {
+    order: -1;
+  }
+}

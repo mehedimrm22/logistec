@@ -1,0 +1,50 @@
+
+.btn {
+    display: inline-block;
+    width: auto;
+  border: none;
+  border-radius: 0;             
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 0; 
+  align-self: flex-start;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* Outline Button */
+.btn-outline {
+  background: transparent;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 0;           
+}
+
+.btn-outline:hover {
+  background: #e5e7eb;
+}
+
+/* Text Button */
+.btn-text {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary);
+  cursor: pointer;
+  border-radius: 0;          
+}
+
+.btn-text:hover {
+  opacity: 0.7;
+}
